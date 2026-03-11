@@ -2,9 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import * as XLSX from 'xlsx'
 
 const INITIAL_STUDENTS = [
-  { id: 1, name: 'Aarav Sharma', email: 'aarav.sharma@example.com', age: '20' },
-  { id: 2, name: 'Priya Reddy', email: 'priya.reddy@example.com', age: '21' },
-  { id: 3, name: 'Rahul Nair', email: 'rahul.nair@example.com', age: '19' },
+  { id: 1, name: 'Rohit Kumar', email: 'rohit.kumar@example.com', age: '22' },
+  { id: 2, name: 'Sneha Patel', email: 'sneha.patel@example.com', age: '21' },
 ]
 
 const EMPTY_FORM = {
