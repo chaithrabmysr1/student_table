@@ -48,6 +48,10 @@ function App() {
     })
   }, [searchTerm, students])
 
+  const sortedStudents = useMemo(() => {
+    return [...filteredStudents].sort((a, b) => a.name.localeCompare(b.name))
+  }, [filteredStudents])
+
   const validate = () => {
     const nextErrors = {}
     const cleanName = formData.name.trim()
@@ -324,14 +328,14 @@ function App() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 bg-white">
-                {filteredStudents.length === 0 ? (
+                {sortedStudents.length === 0 ? (
                   <tr>
                     <td colSpan="4" className="px-4 py-10 text-center text-sm text-slate-500">
                       No students found.
                     </td>
                   </tr>
                 ) : (
-                  filteredStudents.map((student, index) => (
+                  sortedStudents.map((student, index) => (
                     <tr
                       key={student.id}
                       className={`transition-colors duration-200 hover:bg-blue-50 ${index % 2 === 0 ? 'bg-white' : 'bg-slate-50/40'
