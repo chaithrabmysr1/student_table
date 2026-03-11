@@ -46,3 +46,4 @@ Netlify has a free tier and it is enough for this assignment.
 5. Click **Deploy site**.
 
 `netlify.toml` is included so Netlify can use the correct build output and SPA redirect.
+# student_table
