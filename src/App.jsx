@@ -210,7 +210,7 @@ function App() {
       <section className="mb-6 rounded-2xl border border-blue-200 bg-gradient-to-r from-blue-100 via-sky-100 to-indigo-100 p-5 text-slate-900 shadow-lg sm:p-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Students Table</h1>
+            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Student Management System</h1>
             <p className="mt-1 text-sm text-slate-700">
               Manage students with add, edit, delete, filter, and Excel download.
             </p>
