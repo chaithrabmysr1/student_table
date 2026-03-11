@@ -317,6 +317,10 @@ function App() {
             </div>
           </div>
 
+          <p className="mb-3 text-sm font-medium text-slate-600">
+            Total Results: {filteredStudents.length}
+          </p>
+
           <div className="overflow-x-auto rounded-xl border border-slate-200">
             <table className="min-w-full divide-y divide-slate-200 text-sm">
               <thead className="bg-slate-50">
